@@ -1,0 +1,40 @@
+.recommendation-container {
+  display: flex;
+  width: 100%; /* Full width to cover the viewport */
+}
+
+/* Left panel fixed width, scrolling content */
+.recommendation-left-panel {
+  flex: 0 0 200px; /* Fixed width */
+  background-color: #f1f3f1; /* Background color */
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Scrollable content */
+  position: fixed; /* Fixed positioning */
+  top: 10px;
+  left:10px;
+  border-radius: 5px;
+  z-index: 2; /* Ensures it stays above the other content */
+  height: fit-content;
+}
+
+/* Middle content with dynamic width */
+.recommendation-stops {
+  flex-grow: 1; /* Allows the middle content to grow */
+  margin-left: 200px; /* Space for the left panel */
+  margin-right: 200px; /* Space for the right panel */
+  overflow-y: auto; /* Scrollable content if needed */
+  padding: 20px; /* Padding for inner spacing */
+  z-index: 1; /* Below the fixed panels */
+}
+
+/* Right panel fixed width, scrolling content */
+.recommendation-right-panel {
+  flex: 0 0 200px; /* Fixed width */
+  background-color: #f4f3f3; /* Background color */
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Scrollable content */
+  position: fixed; /* Fixed positioning */
+  top: 0;
+  right: 0;
+  z-index: 2; /* Ensures it stays above the other content */
+}

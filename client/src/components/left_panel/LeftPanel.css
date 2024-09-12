@@ -1,0 +1,89 @@
+/* LeftPanel.css */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto; 
+  width: 200px; /* Adjust the width as needed */
+  background-color: #f9f9f9; /* Soft white color for minimalism */
+  border-right:none;
+}
+
+.left-panel-header {
+  background-color: #ecfaff; /* Soft light blue for the header */
+  padding: 10px; /* Spacing around the header content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 5px rgba(133, 132, 132, 0.1); /* Adds a shadow to the header for depth */
+  height: 30px;
+}
+
+.left-panel-header span {
+  font-size: 15px !important; /* Adjusts the font size for better readability */
+  font-weight:500;
+}
+
+#city-back-button {
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem; /* Slightly larger font size for better interaction */
+  border: none #d1d1d1; /* Adds a subtle border */
+  background-color: #f9f9f9; /* Matches the panel background */
+  opacity: 0.8;
+  padding: 6px 10px; /* Increases padding for a larger click area */
+  margin-left: 10px; /* Adds margin to separate from the header title */
+}
+#city-back-button:hover {
+  background-color: #f0f0f0; /* Lightens the background on hover */
+  transition:100ms;
+}
+
+.left-panel-top-k-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centers items vertically */
+}
+
+.left-panel-top-k-selector {
+  display: flex;
+  align-items: center; /* Aligns the dropdown vertically with the label */
+}
+
+.left-panel-top-k-selector span {
+  font-size: 0.9rem; /* Adjusts font size for better readability */
+  margin-right: 5px; /* Adds spacing between the label and the dropdown */
+}
+
+/* Additional CSS for list items */
+.city-list-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px; /* Adds padding for spacing */
+  border-bottom: 1px solid #e1e1e1; /* Adds a separator between items */
+}
+
+.city-name {
+  flex-grow: 1;
+  margin-left: 10px; /* Adds spacing between the image and the city name */
+  font-size: 0.9rem; /* Adjusts font size for readability */
+}
+
+.city-checkbox {
+  margin-right: 10px; /* Adds spacing between the checkbox and the edge */
+}
+.city-search-bar{
+  border: 1px  #d1d1d1; /* Adds a subtle border */
+  width: 100%; /* Adjusts the width of the search bar */
+  height: 25px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.city-search-bar:hover {
+  border: 1px solid #d1d1d1; /* Adds a border on hover for visual feedback */
+  transition: 0.05s; /* Smoothens the transition effect */
+}

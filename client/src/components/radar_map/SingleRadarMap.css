@@ -1,0 +1,18 @@
+.recharts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.recharts-responsive-container {
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 300px;
+}
+
+.recharts-legend-wrapper {
+    position: relative;
+    width: auto;
+}

@@ -1,0 +1,37 @@
+.procedure-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+}
+
+.procedure-item-content {
+    flex-grow: 1;
+}
+
+.procedure-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.procedure-item p {
+    margin: 4px 0;
+}
+
+.remove-button {
+    padding: 8px 16px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #ff1a1a;
+}

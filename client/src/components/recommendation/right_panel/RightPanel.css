@@ -1,0 +1,43 @@
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    max-width: 400px;
+}
+
+.right-panel-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.header-icon:hover {
+    background-color: #f1f1f1;
+}
+
+.header-icon.active {
+    background-color: #e0e0e0;
+}
+
+.right-panel-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel-content h4 {
+    margin-top: 0;
+}
+
+.right-panel-content p {
+    margin-bottom: 10px;
+}

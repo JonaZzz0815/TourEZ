@@ -1,0 +1,42 @@
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    position: relative; /* This is needed for absolute positioning of child elements */
+}
+
+.left-panel {
+    min-width: 200px;
+    overflow-y: auto;
+}
+
+.dropdown {
+    margin: 10px; /* Add some margin around the dropdown */
+    padding: 5px; /* Padding for better click area */
+}
+
+.next-page-btn {
+    position: absolute; /* Absolute position for the button */
+    bottom: 10px; /* 10px from the bottom */
+    right: 10px; /* 10px from the right */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #237af5; /* Example button color, change as needed */
+    color: white; /* Text color for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor for the button */
+    font-size: 1rem; /* Font size for the button text */
+    height: fit-content;
+    width: fit-content
+}
+
+.next-page-btn:hover {
+    background-color: #3697ff; /* Darker color on hover */
+}
+/* Style for the button container if the button is wrapped */
+.next-page-btn-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}

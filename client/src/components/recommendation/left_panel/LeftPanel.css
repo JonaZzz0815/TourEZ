@@ -1,0 +1,43 @@
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  width: 200px; /* Adjust the width as needed */
+  background-color: #f1f3f1; /* Soft white color for minimalism */
+  position: sticky; /* Make it stick to the top */
+  top: 0;
+}
+
+
+.left-panel-header {
+  background-color: #cff1fc; /* Soft light blue for the header */
+  padding: 10px; /* Spacing around the header content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 5px rgba(133, 132, 132, 0.1); /* Adds a shadow to the header for depth */
+  height: 30px;
+}
+
+.left-panel-header span {
+  font-size: 15px !important; /* Adjusts the font size for better readability */
+  font-weight:500;
+}
+
+#city-back-button {
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem; /* Slightly larger font size for better interaction */
+  border: 1px solid #d1d1d1; /* Adds a subtle border */
+  background-color: #f9f9f9; /* Matches the panel background */
+  opacity: 0.8;
+  padding: 6px 10px; /* Increases padding for a larger click area */
+  margin-left: 10px; /* Adds margin to separate from the header title */
+}
+
+
+/* Aligns text with button and provides more space */
